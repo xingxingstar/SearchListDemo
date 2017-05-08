@@ -13,11 +13,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.zhuwojia.searchlistdemo.utils.PinYinUtils;
 import com.example.zhuwojia.searchlistdemo.R;
 import com.example.zhuwojia.searchlistdemo.adapter.SearchListAdapter;
-import com.example.zhuwojia.searchlistdemo.inter.StringCallBack;
 import com.example.zhuwojia.searchlistdemo.constant.Cities;
+import com.example.zhuwojia.searchlistdemo.inter.StringCallBack;
+import com.example.zhuwojia.searchlistdemo.utils.PinYinUtils;
 
 import java.util.ArrayList;
 
@@ -46,14 +46,6 @@ public class SearchListActivity extends AppCompatActivity {
         recy_city_list = (RecyclerView) findViewById(R.id.recy_city_list);
     }
 
-
-    public void OnClick(View view) {
-        switch (view.getId()) {
-            case R.id.iv_back:
-                finish();
-                break;
-        }
-    }
 
     private void setListener() {
         adapter.setCallBack(new StringCallBack() {
@@ -105,5 +97,13 @@ public class SearchListActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.iv_back:
+                finish();
+                break;
+        }
     }
 }
