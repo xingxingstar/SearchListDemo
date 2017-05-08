@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sx_white">#ffffff</color>
+    <color name="sx_grey_C">#CCCCCC</color>
+    <color name="sx_transparent">@android:color/transparent</color>
+    <color name="sx_6_transprent">#60000000</color>
+    <color name="sx_dark_red">#EA645B</color>
+    <color name="sx_black">#333333</color>
+</resources>

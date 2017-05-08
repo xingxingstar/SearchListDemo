@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/sx_5dp"
+        android:paddingTop="@dimen/sx_5dp"
+        android:text="抱歉,未找到相关位置，可尝试修改后重试"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/sx_black" />
+</LinearLayout>
