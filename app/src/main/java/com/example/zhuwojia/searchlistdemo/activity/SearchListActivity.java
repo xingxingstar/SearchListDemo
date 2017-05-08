@@ -17,6 +17,7 @@ import com.example.zhuwojia.searchlistdemo.R;
 import com.example.zhuwojia.searchlistdemo.adapter.SearchListAdapter;
 import com.example.zhuwojia.searchlistdemo.constant.Cities;
 import com.example.zhuwojia.searchlistdemo.inter.StringCallBack;
+import com.example.zhuwojia.searchlistdemo.utils.ComonUtis;
 import com.example.zhuwojia.searchlistdemo.utils.PinYinUtils;
 
 import java.util.ArrayList;
@@ -63,7 +64,9 @@ public class SearchListActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (s.length() > 0) {
-                    String inputString = s.toString();
+//                    将大写字母转换为小写字母
+                    String inputString = ComonUtis.exChange(s.toString());
+//                    将输入的汉字转换为拼音
                     String inputPinYin = PinYinUtils.getPingYin(inputString);
                     recy_city_list.setVisibility(View.VISIBLE);
                     ArrayList list = new ArrayList();
