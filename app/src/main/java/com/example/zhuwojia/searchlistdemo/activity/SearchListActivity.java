@@ -51,11 +51,6 @@ public class SearchListActivity extends AppCompatActivity {
         adapter.setCallBack(new StringCallBack() {
             @Override
             public void typeChangeListener(String value) {
-//                Intent intent = new Intent(SearchListActivity.this, SearchResultActivity.class);
-//                Bundle bundle = new Bundle();
-//                bundle.putString("city", value);
-//                intent.putExtra("bundle", bundle);
-//                startActivity(intent);
                 Toast.makeText(SearchListActivity.this, value, Toast.LENGTH_SHORT).show();
             }
         });
