@@ -32,7 +32,7 @@ public class PinYinUtils {
                         "[\\u4E00-\\u9FA5]+")) {
                     String[] temp = PinyinHelper.toHanyuPinyinStringArray(
                             curchar, format);
-                    output += temp[0]+" ";
+                    output += temp[0];
                 } else
                     output += Character.toString(curchar);
             }
